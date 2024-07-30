@@ -3,12 +3,17 @@ import {
   API_URL,
 } from "@env";
 
+import { Logs } from 'expo'
+
+Logs.enableExpoCliLogging()
+
+console.log("API_URL", API_URL)
 const settings = {
   dev: {
     apiUrl: API_URL,
   },
   staging: {
-
+    apiUrl: API_URL,
   },
   prod: {
 
